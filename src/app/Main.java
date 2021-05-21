@@ -51,7 +51,7 @@ public class Main {
 				System.out.println("Goodbye.");
 				
 			} else {
-				System.out.println("Not an available selection. Please select either 1, 2, 3.");
+				System.out.println("Please select either 1, 2, 3.");
 			}
 		}
 		

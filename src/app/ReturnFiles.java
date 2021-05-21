@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class ReturnFiles {
 	public void userInput(){
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter the file path: ");
+		System.out.println("Enter the file path. If you want to select the current path, enter 'C:': ");
 		String path = scanner.nextLine();
 		
 		File folder = new File(path);
@@ -23,7 +23,7 @@ public class ReturnFiles {
 				System.out.println(file.getName());
 			}
 			
-		}
+		}else {System.out.println("Not a valid file path.");}
 		
 	}
 }

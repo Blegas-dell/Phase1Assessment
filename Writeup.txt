@@ -1,0 +1,25 @@
+Core concepts used to develop this application:
+
+OOP and java.util packages
+- Scanner, Arrays, Collections, Comparator, ArrayList, io.*
+File Handling
+Search Algorithms
+- simple matching using instance of FilenameFilter())
+git and Github for version management
+
+File/Method Heirarchy Hierarchy
+Main.java
+Menu.java
+  - Menu Class
+    - Back():void ----->returns user to previous menu
+    - BackToMain():void ----->returns user to main menu
+    - MainMenu():void ----->prints main menu options (Return Files, Modify Files, Exit)
+    - ModifyMenu():void ----->prints submenu options (Add, Delete, Search)
+ModifyFiles.java
+  - ModifyFiles Class
+    - AddFile():void ----->add file to current directory
+    - DeleteFile():void ----->delete file from current directory
+    - SearchFile():void ----->search for file(s) in current directory (returns partial matches as well)
+ReturnFiles.java
+  - ReturnFiles Class
+    - userInput():void ----->returns all of the files in user specified directory.

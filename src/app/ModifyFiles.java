@@ -33,11 +33,9 @@ public class ModifyFiles {
 		
 		File myCurrentFile = new File(filename);
 		if (myCurrentFile.delete()) {
-			if (myCurrentFile.delete()) {
-				System.out.println("Deleted the file: " + myCurrentFile.getName());
+			System.out.println("Deleted the file: " + myCurrentFile.getName());
 			} else {
-				System.out.println("Failed to delete the file");
-			}
+			System.out.println("Failed to delete the file. File Not Found.");
 		}
 		
 	}
@@ -58,12 +56,13 @@ public class ModifyFiles {
 	    String[] children = directory.list(filter);
 	    if (children == null) {
 	       System.out.println("Either dir does not exist or is not a directory"); 
-	    } else { 
+	    }if (children.length==0) {
+		   System.out.println("No files were found matching your description."); 
+		}else { 
 	       for (int i = 0; i< children.length; i++) {
 	          String file = children[i];
 	          System.out.println("File retrieved: " + file);
 	       } 
 	    } 
 	}
-
 }
